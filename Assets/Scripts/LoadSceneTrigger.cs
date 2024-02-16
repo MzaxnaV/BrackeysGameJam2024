@@ -8,7 +8,7 @@ public class LoadSceneTrigger : MonoBehaviour
 {
     [Header("Loading Scene")]
     [SerializeField] private SceneField sceneToLoad;
-    [SerializeField] private Portal thisPortal;
+    [SerializeField] private Portal portalExit;
     
     [Header("Unload")]
     [SerializeField] private SceneField[] sceneToUnload;
