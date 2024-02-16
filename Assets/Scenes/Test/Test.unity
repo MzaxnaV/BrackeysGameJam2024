@@ -1644,11 +1644,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1245601353}
     m_Modifications:
-    - target: {fileID: 96562305116698508, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 295948364}
     - target: {fileID: 2493651340525487997, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
         type: 3}
       propertyPath: m_Mesh
@@ -1689,11 +1684,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 721914079}
-    - target: {fileID: 5973154131910282217, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 295948364}
     - target: {fileID: 5998104086741494055, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
         type: 3}
       propertyPath: m_Mesh
@@ -2352,11 +2342,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1245601353}
     m_Modifications:
-    - target: {fileID: 96562305116698508, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 494466320}
     - target: {fileID: 2493651340525487997, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
         type: 3}
       propertyPath: m_Mesh
@@ -2397,11 +2382,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1358777459}
-    - target: {fileID: 5973154131910282217, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 494466320}
     - target: {fileID: 5998104086741494055, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
         type: 3}
       propertyPath: m_Mesh
@@ -2426,11 +2406,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VersionIndex
       value: 1425
-      objectReference: {fileID: 0}
-    - target: {fileID: 7131249252108295202, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
-        type: 3}
-      propertyPath: destination
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7131249252108295212, guid: b46ba1448ba9f524ba866f83ca2ee6e7,
         type: 3}
