@@ -21,7 +21,7 @@ namespace Portals
         
         #region SerializedFields
 
-        [SerializeField] private Portal destination;
+        private Portal destination;
         [SerializeField] private PortalTag portalTag = PortalTag.None;
         [SerializeField] private PortalTag destinationTag = PortalTag.None;
 
