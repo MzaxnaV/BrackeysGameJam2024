@@ -74,3 +74,4 @@ crashlytics-build.properties
 # Project Temp
 .idea/
 .vscode/
+.vsconfig
