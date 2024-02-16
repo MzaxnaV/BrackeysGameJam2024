@@ -1435,7 +1435,7 @@ PrefabInstance:
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneName
-      value: Base
+      value: Test
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
