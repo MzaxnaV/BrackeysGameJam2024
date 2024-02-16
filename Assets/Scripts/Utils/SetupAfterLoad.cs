@@ -8,6 +8,8 @@ namespace Utils
         [Header("Loading Scene")]
         [SerializeField] private Portal thisPortal;
 
+        [Header("Cleanup")] [SerializeField] private GameObject[] objects;
+
         private void Awake()
         {
             if (thisPortal == null)
@@ -24,7 +26,7 @@ namespace Utils
 
             transitionManager.portalTo = thisPortal;
             transitionManager.Transition(true);
-
+            
             Destroy(gameObject);
         }
     }
