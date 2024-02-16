@@ -1,4 +1,3 @@
-using System;
 using Portals;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,15 +13,13 @@ public class LoadSceneTrigger : MonoBehaviour
     [Header("Unload")]
     [SerializeField] private SceneField[] sceneToUnload;
 
-    private bool loaded = false;
-
     private void OnTriggerEnter(Collider other)
     {
-        if (!loaded && other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             TransitionSceneManager.Instance.portalFrom = thisPortal;
             SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
-            loaded = true;
+            Destroy(gameObject);
         }
     }
 }
