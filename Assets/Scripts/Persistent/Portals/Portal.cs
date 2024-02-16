@@ -19,11 +19,14 @@ namespace Portals
             Base,
         };
         
-        #region SerializedFields
-
-        private Portal destination;
+        [Header("Visualization")]
         [SerializeField] private PortalTag portalTag = PortalTag.None;
         [SerializeField] private PortalTag destinationTag = PortalTag.None;
+        
+        [Header("Portal")]
+        #region PrivateFields
+
+        private Portal destination;
 
         #endregion
 
