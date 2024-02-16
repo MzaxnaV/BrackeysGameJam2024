@@ -1,4 +1,5 @@
 using System;
+using Portals;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utils;
@@ -6,7 +7,11 @@ using Utils;
 [RequireComponent(typeof(BoxCollider))]
 public class LoadSceneTrigger : MonoBehaviour
 {
-    [SerializeField] private SceneField[] scenesToLoad;
+    [Header("Loading Scene")]
+    [SerializeField] private SceneField sceneToLoad;
+    [SerializeField] private Portal thisPortal;
+    
+    [Header("Unload")]
     [SerializeField] private SceneField[] sceneToUnload;
 
     private bool loaded = false;
@@ -15,12 +20,8 @@ public class LoadSceneTrigger : MonoBehaviour
     {
         if (!loaded && other.CompareTag("Player"))
         {
-            Debug.Log("Loading Scenes");
-            foreach (var scene in scenesToLoad)
-            {
-                SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
-            }
-            
+            TransitionSceneManager.Instance.portalFrom = thisPortal;
+            SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
             loaded = true;
         }
     }

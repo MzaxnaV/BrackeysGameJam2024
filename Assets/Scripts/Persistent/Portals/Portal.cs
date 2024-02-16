@@ -12,10 +12,18 @@ namespace Portals
     /// </summary>
     public class Portal : MonoBehaviour
     {
+        public enum PortalTag
+        {
+            None,
+            Main,
+            Base,
+        };
+        
         #region SerializedFields
 
-        [SerializeField]
-        private Portal destination;
+        [SerializeField] private Portal destination;
+        [SerializeField] private PortalTag portalTag = PortalTag.None;
+        [SerializeField] private PortalTag destinationTag = PortalTag.None;
 
         #endregion
 
@@ -31,6 +39,10 @@ namespace Portals
                     PortalManager.Instance?.Subscribe(this);
             }
         }
+
+        public PortalTag GetTag => portalTag;
+
+        public string GetEditorText() => portalTag + " --> " + destinationTag;
 
         #endregion
 
