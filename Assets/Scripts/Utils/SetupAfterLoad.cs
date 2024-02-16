@@ -10,6 +10,8 @@ namespace Utils
 
         [Header("Cleanup")] [SerializeField] private GameObject[] objects;
 
+        // private bool doOnce = true;
+
         private void Awake()
         {
             if (entryPortal == null)
@@ -20,8 +22,6 @@ namespace Utils
 
         private void OnEnable()
         {
-            Debug.Assert(entryPortal != null);
-
             var transitionManager = TransitionSceneManager.Instance;
 
             transitionManager.portalTo = entryPortal;
@@ -31,6 +31,8 @@ namespace Utils
             {
                 Destroy(o);
             }
+            
+            gameObject.SetActive(false);
         }
     }
 }

@@ -17,6 +17,11 @@ namespace Portals
             None,
             Main,
             Base,
+            One,
+            Two,
+            Three,
+            Four,
+            Five,
         };
         
         [Header("Visualization")]

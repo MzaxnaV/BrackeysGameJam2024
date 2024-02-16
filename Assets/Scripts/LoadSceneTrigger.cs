@@ -13,10 +13,15 @@ public class LoadSceneTrigger : MonoBehaviour
     [Header("Unload")]
     [SerializeField] private SceneField[] sceneToUnload;
 
+    private bool loadOnce = true;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (sceneToLoad != null && loadOnce && other.CompareTag("Player") )
         {
+            // check if scene to be loaded isn't this
+            Debug.Log("Loading scene: " + sceneToLoad);
+            loadOnce = false;
             TransitionSceneManager.Instance.portalFrom = portalExit;
             SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
             Destroy(gameObject);

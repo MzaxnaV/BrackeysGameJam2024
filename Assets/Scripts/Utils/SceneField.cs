@@ -10,7 +10,7 @@ namespace Utils
     {
         [SerializeField] private Object sceneAsset;
 
-        [SerializeField] private string sceneName;
+        [SerializeField] private string sceneName = "";
 
         public string SceneName => sceneName;
 
@@ -39,6 +39,10 @@ namespace Utils
                     {
                         name.stringValue = (asset.objectReferenceValue as SceneAsset)!.name;
                     }
+                }
+                else
+                {
+                    name.stringValue = "";
                 }
                 
                 EditorGUI.EndProperty();
