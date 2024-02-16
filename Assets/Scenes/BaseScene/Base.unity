@@ -131,7 +131,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh97514
+  m_Name: pb_Mesh-1364922
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -310,14 +310,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4829380955085699784, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
-      propertyPath: thisPortal
+      propertyPath: entryPortal
       value: 
       objectReference: {fileID: 728800644026578053}
-    - target: {fileID: 4829380955085699784, guid: a255071870fc14e4b8e162702a218436,
-        type: 3}
-      propertyPath: objects.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4829380955085699785, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
       propertyPath: m_RootOrder
@@ -387,6 +382,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4799532266875992592, guid: 4fd4abb20375bd8448b42567f4165e61,
+        type: 3}
+      propertyPath: portalExit
+      value: 
+      objectReference: {fileID: 8974878477863045364}
+    - target: {fileID: 4799532266875992604, guid: 4fd4abb20375bd8448b42567f4165e61,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8543350757389952210, guid: 4fd4abb20375bd8448b42567f4165e61,
         type: 3}
       propertyPath: m_Mesh
@@ -395,7 +400,7 @@ PrefabInstance:
     - target: {fileID: 8543350757389952210, guid: 4fd4abb20375bd8448b42567f4165e61,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1480
+      value: 1489
       objectReference: {fileID: 0}
     - target: {fileID: 8543350757389952214, guid: 4fd4abb20375bd8448b42567f4165e61,
         type: 3}
@@ -469,3 +474,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd4abb20375bd8448b42567f4165e61, type: 3}
+--- !u!114 &8974878477863045364 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 518275394927084579, guid: 4fd4abb20375bd8448b42567f4165e61,
+    type: 3}
+  m_PrefabInstance: {fileID: 8974878477863045363}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead9623987e4d0d419d0de68390e1bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

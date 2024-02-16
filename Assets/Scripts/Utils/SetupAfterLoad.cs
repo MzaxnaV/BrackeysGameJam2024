@@ -6,13 +6,13 @@ namespace Utils
     public class SetupAfterLoad : MonoBehaviour
     {
         [Header("Loading Scene")]
-        [SerializeField] private Portal thisPortal;
+        [SerializeField] private Portal entryPortal;
 
         [Header("Cleanup")] [SerializeField] private GameObject[] objects;
 
         private void Awake()
         {
-            if (thisPortal == null)
+            if (entryPortal == null)
             {
                 Debug.LogError("SET THIS PORTAL!!");
             }
@@ -20,11 +20,11 @@ namespace Utils
 
         private void OnEnable()
         {
-            Debug.Assert(thisPortal != null);
+            Debug.Assert(entryPortal != null);
 
             var transitionManager = TransitionSceneManager.Instance;
 
-            transitionManager.portalTo = thisPortal;
+            transitionManager.portalTo = entryPortal;
             transitionManager.Transition(true);
 
             foreach (var o in objects)

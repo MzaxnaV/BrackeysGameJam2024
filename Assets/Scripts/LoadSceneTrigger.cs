@@ -17,7 +17,7 @@ public class LoadSceneTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            TransitionSceneManager.Instance.portalFrom = thisPortal;
+            TransitionSceneManager.Instance.portalFrom = portalExit;
             SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
             Destroy(gameObject);
         }
