@@ -278,7 +278,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh98552
+  m_Name: pb_Mesh98750
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1087,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
@@ -1097,12 +1097,12 @@ PrefabInstance:
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
@@ -1112,7 +1112,7 @@ PrefabInstance:
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
@@ -1127,7 +1127,7 @@ PrefabInstance:
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4224717229747524044, guid: 6687bc2a150e9144da2adfc4ca19a679,
         type: 3}
@@ -1373,7 +1373,7 @@ PrefabInstance:
     - target: {fileID: 2213952377927750485, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750485, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
