@@ -24,6 +24,8 @@ namespace Utils
 
             transitionManager.portalTo = thisPortal;
             transitionManager.Transition(true);
+
+            Destroy(gameObject);
         }
     }
 }

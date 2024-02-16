@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Portals.Utility;
+using UnityEngine;
 
 namespace Portals
 {
@@ -29,7 +30,10 @@ namespace Portals
         internal void Subscribe(Portal portal)
         {
             if (!portal.Destination)
-                throw new System.NullReferenceException($"{portal.name} has no destination. Please, set a destination for it.");
+            {
+                Debug.Log($"{portal.name} has no destination. Please, set a destination for it.");
+                return;
+            }
             this.portals.Add(portal);
         }
 
