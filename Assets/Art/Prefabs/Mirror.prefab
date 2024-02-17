@@ -112,7 +112,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
+  m_Size: {x: 7, y: 3, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5246202509425832909
 MonoBehaviour:
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 75
   distance: 10
+  senseDoor: 0
 --- !u!1 &5589566794748030814
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,6 +140,7 @@ GameObject:
   - component: {fileID: 2807030357400759292}
   - component: {fileID: 9222110623341139370}
   - component: {fileID: 2449943340416165691}
+  - component: {fileID: 5327072473141666739}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -211,6 +213,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5327072473141666739
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589566794748030814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 760207555604313364, guid: 88073348e57a6f64d9aa439fbf496005, type: 3}
 --- !u!1 &8119370668917211722
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +239,7 @@ GameObject:
   - component: {fileID: 6228647204536207568}
   - component: {fileID: 1162679424128055856}
   m_Layer: 0
-  m_Name: Outer
+  m_Name: Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
