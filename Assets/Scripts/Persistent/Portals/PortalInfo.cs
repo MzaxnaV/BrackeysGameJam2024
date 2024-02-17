@@ -11,6 +11,9 @@ namespace Portals
 
         [Header("Skybox")]
         public Color tint;
+
+        [Header("Level Dialogue")] 
+        public AudioClip clip;
         public string GetEditorText() => source + " --> " + destination;
     }
 
