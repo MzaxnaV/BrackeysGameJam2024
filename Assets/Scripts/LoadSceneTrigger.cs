@@ -28,6 +28,12 @@ public class LoadSceneTrigger : MonoBehaviour
             {
                 blockerObject.SetActive(true);
             }
+
+            foreach (var scene in sceneToUnload)
+            {
+                SceneManager.UnloadSceneAsync(scene);
+            }
+            
             Destroy(gameObject);
         }
     }

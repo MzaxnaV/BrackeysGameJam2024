@@ -47,7 +47,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 1024
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 15, y: 15, z: 15}
+  m_BoxSize: {x: 5, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 2449943340416165691}
   - component: {fileID: 5327072473141666739}
   m_Layer: 0
-  m_Name: Glass
+  m_Name: Outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
