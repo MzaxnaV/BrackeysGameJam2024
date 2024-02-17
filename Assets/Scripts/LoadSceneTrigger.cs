@@ -13,6 +13,7 @@ public class LoadSceneTrigger : MonoBehaviour
     
     [Header("Cleanup")]
     [SerializeField] private SceneField[] sceneToUnload;
+    [SerializeField] private GameObject blockerObject;
 
     private bool loadOnce = true;
 
@@ -23,6 +24,10 @@ public class LoadSceneTrigger : MonoBehaviour
             loadOnce = false;
             TransitionSceneManager.Instance.portalFrom = portalExit;
             SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+            if (blockerObject != null)
+            {
+                blockerObject.SetActive(true);
+            }
             Destroy(gameObject);
         }
     }
