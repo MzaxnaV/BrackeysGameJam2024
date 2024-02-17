@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_End/EndLevel.unity
     guid: 52d17e851f958814fa3070ca60409077
+  - enabled: 1
+    path: Assets/Scenes/Entry_DONOTTOUCH/DummyScene.unity
+    guid: a291d0642b5b56c40af17cad5eada27e
   m_configObjects: {}

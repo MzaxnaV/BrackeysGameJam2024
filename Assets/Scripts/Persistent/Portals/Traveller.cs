@@ -85,7 +85,6 @@ namespace Portals
         /// <param name="destination">The destination.</param>
         internal void Teleport(Portal source, Portal destination)
         {
-            Debug.Log("Teleporting!!");
             Matrix4x4 localTransform = destination.OutTransform.localToWorldMatrix * source.transform.worldToLocalMatrix * this.transform.localToWorldMatrix;
 
             CharacterController controller = GetComponent<CharacterController>();

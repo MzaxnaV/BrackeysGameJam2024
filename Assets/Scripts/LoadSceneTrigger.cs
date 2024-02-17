@@ -1,4 +1,3 @@
-using System;
 using Portals;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,6 +30,7 @@ public class LoadSceneTrigger : MonoBehaviour
 
             foreach (var scene in sceneToUnload)
             {
+                Debug.Log("Unloading: " + scene);
                 SceneManager.UnloadSceneAsync(scene);
             }
             

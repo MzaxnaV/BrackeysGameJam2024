@@ -242,6 +242,23 @@ namespace Portals
                 this.StopTracking(traveller);
 
                 traveller.Teleport(this, this.Destination);
+
+                if (info.clip != null)
+                {
+                    GameObject audioSourceGameObject = new GameObject("TempAudioSource");
+                    
+                    // make parent of the gameObject
+                    audioSourceGameObject.transform.parent = destination.transform;
+                    
+                    AudioSource audioSource = audioSourceGameObject.AddComponent<AudioSource>();
+            
+                    audioSource.clip = info.clip;
+
+                    audioSource.volume = 1.0f;
+                    audioSource.loop = false;
+
+                    audioSource.Play();
+                }
                 
                 this.OnTeleportTraveller.Invoke(this, this.Destination, traveller);
                 traveller.InvokeOnTeleport(this, this.Destination);
