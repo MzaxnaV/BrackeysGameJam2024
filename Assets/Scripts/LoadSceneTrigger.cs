@@ -16,12 +16,6 @@ public class LoadSceneTrigger : MonoBehaviour
 
     private bool loadOnce = true;
 
-    private void Awake()
-    {
-        Destroy(GetComponent<Mesh>());
-        Destroy(GetComponent<MeshRenderer>());
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (sceneToLoad != null && loadOnce && other.CompareTag("Player") )
