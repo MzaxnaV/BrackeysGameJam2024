@@ -15,7 +15,10 @@ namespace Portals
     public enum PortalTag
     {
         None,
-        PlatformLevel,
-        Main,
+        Entry,
+        LevelMain,
+        LevelHeight,
+        LevelMirror,
+        LevelLight
     }
 }

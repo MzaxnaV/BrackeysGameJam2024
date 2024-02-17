@@ -1,30 +1,30 @@
 using Portals;
 using UnityEngine;
 
-namespace Utils
+public class SetupAfterLoad : MonoBehaviour
 {
-    public class SetupAfterLoad : MonoBehaviour
+    [Header("Loading Scene")]
+    [SerializeField] private Portal entryPortal;
+        
+    [Header("Cleanup")] 
+    [SerializeField] private GameObject[] objects;
+
+    [SerializeField] private bool destroySelf;
+        
+    private void Start()
     {
-        [Header("Loading Scene")]
-        [SerializeField] private Portal entryPortal;
-        
-        [Header("Cleanup")] 
-        [SerializeField] private GameObject[] objects;
-
-        [SerializeField] private bool destroySelf;
-        
-        private void Start()
+        if (!destroySelf && entryPortal == null)
         {
-            if (!destroySelf && entryPortal == null)
-            {
-                Debug.LogError("SET THIS PORTAL!!");
-            } else if (destroySelf)
-            {
-                Destroy(gameObject);
-            }
+            Debug.LogError("SET THIS PORTAL!!");
+        } else if (destroySelf)
+        {
+            Destroy(gameObject);
         }
+    }
 
-        private void OnEnable()
+    private void OnEnable()
+    {
+        if (!destroySelf)
         {
             var transitionManager = TransitionSceneManager.Instance;
 
@@ -35,7 +35,7 @@ namespace Utils
             {
                 Destroy(o);
             }
-            
+                
             gameObject.SetActive(false);
         }
     }

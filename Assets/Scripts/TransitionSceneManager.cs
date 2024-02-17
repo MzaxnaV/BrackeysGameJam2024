@@ -1,24 +1,21 @@
 using Portals;
 using Portals.Utility;
 
-namespace Utils
+public class TransitionSceneManager : MonoBehaviourSingleton<TransitionSceneManager>
 {
-    public class TransitionSceneManager : MonoBehaviourSingleton<TransitionSceneManager>
-    {
-        public Portal portalTo;
-        public Portal portalFrom;
+    public Portal portalTo;
+    public Portal portalFrom;
 
-        public void Transition(bool shouldReturn)
+    public void Transition(bool shouldReturn)
+    {
+        portalFrom.Destination = portalTo;
+        if (shouldReturn)
         {
-            portalFrom.Destination = portalTo;
-            if (shouldReturn)
-            {
-                portalTo.Destination = portalFrom;
-            }
-            
-            // cleanup the references
-            portalTo = null;
-            portalFrom = null;
+            portalTo.Destination = portalFrom;
         }
+            
+        // cleanup the references
+        portalTo = null;
+        portalFrom = null;
     }
 }
