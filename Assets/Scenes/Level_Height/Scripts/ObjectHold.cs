@@ -32,7 +32,7 @@ public class ObjectHold : MonoBehaviour
     void StartPickUp()
     {
         RaycastHit hit;
-        if(Physics.Raycast(GetComponent<Camera>().transform.position,GetComponent<Camera>().transform.forward,out hit, range,pickupLayer))
+        if(Physics.Raycast(mCamera.transform.position,mCamera.transform.forward,out hit, range,pickupLayer))
         {
             Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.CompareTag("ItemWithWeight"))
