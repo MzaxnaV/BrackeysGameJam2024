@@ -12,21 +12,8 @@ namespace Portals
     /// </summary>
     public class Portal : MonoBehaviour
     {
-        public enum PortalTag
-        {
-            None,
-            Main,
-            Base,
-            One,
-            Two,
-            Three,
-            Four,
-            Five,
-        };
-        
         [Header("Visualization")]
-        [SerializeField] private PortalTag portalTag = PortalTag.None;
-        [SerializeField] private PortalTag destinationTag = PortalTag.None;
+        [SerializeField] public PortalInfo info;
         
         [Header("Portal")]
         #region PrivateFields
@@ -47,11 +34,7 @@ namespace Portals
                     PortalManager.Instance?.Subscribe(this);
             }
         }
-
-        public PortalTag GetTag => portalTag;
-
-        public string GetEditorText() => portalTag + " --> " + destinationTag;
-
+        
         #endregion
 
         #region InternalProperties

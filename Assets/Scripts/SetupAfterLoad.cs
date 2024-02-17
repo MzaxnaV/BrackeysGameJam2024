@@ -7,16 +7,20 @@ namespace Utils
     {
         [Header("Loading Scene")]
         [SerializeField] private Portal entryPortal;
+        
+        [Header("Cleanup")] 
+        [SerializeField] private GameObject[] objects;
 
-        [Header("Cleanup")] [SerializeField] private GameObject[] objects;
-
-        // private bool doOnce = true;
-
-        private void Awake()
+        [SerializeField] private bool destroySelf;
+        
+        private void Start()
         {
-            if (entryPortal == null)
+            if (!destroySelf && entryPortal == null)
             {
                 Debug.LogError("SET THIS PORTAL!!");
+            } else if (destroySelf)
+            {
+                Destroy(gameObject);
             }
         }
 

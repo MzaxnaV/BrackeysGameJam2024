@@ -1,4 +1,3 @@
-using System;
 using Portals;
 using UnityEditor;
 using UnityEngine;
@@ -28,7 +27,7 @@ namespace Utils
             var portal = (Portal)target;
             
             Handles.BeginGUI();
-            Handles.Label(portal.transform.position + Offset, portal.GetEditorText(), _labelStyle);
+            Handles.Label(portal.transform.position + Offset, portal.info.GetEditorText(), _labelStyle);
             Handles.EndGUI();
         }
     }

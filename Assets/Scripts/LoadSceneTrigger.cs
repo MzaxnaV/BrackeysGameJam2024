@@ -1,3 +1,4 @@
+using System;
 using Portals;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,12 +9,18 @@ public class LoadSceneTrigger : MonoBehaviour
 {
     [Header("Loading Scene")]
     [SerializeField] private SceneField sceneToLoad;
-    [SerializeField] private Portal portalExit;
+    public Portal portalExit;
     
-    [Header("Unload")]
+    [Header("Cleanup")]
     [SerializeField] private SceneField[] sceneToUnload;
 
     private bool loadOnce = true;
+
+    private void Awake()
+    {
+        Destroy(GetComponent<Mesh>());
+        Destroy(GetComponent<MeshRenderer>());
+    }
 
     private void OnTriggerEnter(Collider other)
     {
