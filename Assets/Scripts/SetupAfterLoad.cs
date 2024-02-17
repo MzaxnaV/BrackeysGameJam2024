@@ -10,6 +10,8 @@ public class SetupAfterLoad : MonoBehaviour
     [SerializeField] private GameObject[] objects;
 
     [SerializeField] private bool destroySelf;
+
+    [SerializeField] private bool goBack = false;
         
     private void Start()
     {
@@ -29,7 +31,7 @@ public class SetupAfterLoad : MonoBehaviour
             var transitionManager = TransitionSceneManager.Instance;
 
             transitionManager.portalTo = entryPortal;
-            transitionManager.Transition(true);
+            transitionManager.Transition(goBack);
 
             foreach (var o in objects)
             {
