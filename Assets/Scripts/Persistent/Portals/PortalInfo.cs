@@ -11,9 +11,7 @@ namespace Portals
 
         [Header("Skybox")]
         public Color tint;
-        public Color ground;
         public string GetEditorText() => source + " --> " + destination;
-
     }
 
     public enum PortalTag
