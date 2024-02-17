@@ -135,12 +135,17 @@ PrefabInstance:
     - target: {fileID: 2063160138378042614, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.5
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063160138378042614, guid: a255071870fc14e4b8e162702a218436,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.200195
       objectReference: {fileID: 0}
     - target: {fileID: 2063160138378042614, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.1
+      value: 30.099998
       objectReference: {fileID: 0}
     - target: {fileID: 2063160138378042614, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
@@ -180,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 4829380955085699785, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4829380955085699785, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
@@ -190,7 +195,7 @@ PrefabInstance:
     - target: {fileID: 4829380955085699785, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -18.099998
       objectReference: {fileID: 0}
     - target: {fileID: 4829380955085699785, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
@@ -240,7 +245,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41794
+  m_Name: pb_Mesh39734
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1063,13 +1068,13 @@ PrefabInstance:
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneName
-      value: ImpatientDoorLevel
+      value: Height
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 6deb687b9f32d144fbe8259894702310,
+      objectReference: {fileID: 102900000, guid: 325892758a36f7c4aa8a9866fdec0b7a,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0c98110a01d57498446f3e87b82b71, type: 3}
@@ -1249,7 +1254,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41838
+  m_Name: pb_Mesh39778
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
