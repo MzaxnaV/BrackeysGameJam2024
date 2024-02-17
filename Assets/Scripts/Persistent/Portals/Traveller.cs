@@ -95,6 +95,11 @@ namespace Portals
                 this.transform.SetPositionAndRotation(localTransform.GetColumn(3), localTransform.rotation);
                 this.rigidbody.position = localTransform.GetColumn(3);
                 this.rigidbody.rotation = localTransform.rotation;
+                
+                Matrix4x4 globalTransform = destination.OutTransform.localToWorldMatrix * source.transform.worldToLocalMatrix;
+                this.rigidbody.velocity = globalTransform.MultiplyVector(rigidbody.velocity);
+                this.rigidbody.angularVelocity = globalTransform.MultiplyVector(rigidbody.angularVelocity);
+                
                 controller.enabled = true;
             }
             else

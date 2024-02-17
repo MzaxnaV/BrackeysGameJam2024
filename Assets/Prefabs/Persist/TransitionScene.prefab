@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2161750540210461902}
+  - component: {fileID: 2045849424084469646}
   m_Layer: 0
   m_Name: TransitionScene
   m_TagString: Untagged
@@ -31,3 +32,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2045849424084469646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161750540210461889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a04e1f27012c7541b188da7224a99ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalTo: {fileID: 0}
+  portalFrom: {fileID: 0}

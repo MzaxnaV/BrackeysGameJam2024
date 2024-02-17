@@ -15,6 +15,10 @@ namespace Utils
             {
                 portalTo.Destination = portalFrom;
             }
+            
+            // cleanup the references
+            portalTo = null;
+            portalFrom = null;
         }
     }
 }
