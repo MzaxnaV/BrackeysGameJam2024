@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectHold : MonoBehaviour
 {
     public GameObject pickObject;
-    public Camera camera;
+    public Camera mCamera;
     public float range = 3f;
     public float go = 100f;
     public Transform playerTransform;
@@ -32,7 +32,7 @@ public class ObjectHold : MonoBehaviour
     void StartPickUp()
     {
         RaycastHit hit;
-        if(Physics.Raycast(camera.transform.position,camera.transform.forward,out hit, range,pickupLayer))
+        if(Physics.Raycast(GetComponent<Camera>().transform.position,GetComponent<Camera>().transform.forward,out hit, range,pickupLayer))
         {
             Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.CompareTag("ItemWithWeight"))
