@@ -1065,7 +1065,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78876
+  m_Name: pb_Mesh83238
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1537,7 +1537,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78860
+  m_Name: pb_Mesh83222
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2452,6 +2452,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
+        type: 3}
+      propertyPath: portalExit
+      value: 
+      objectReference: {fileID: 1181945124}
+    - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
+        type: 3}
+      propertyPath: sceneToLoad.sceneName
+      value: Impatient
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
+        type: 3}
+      propertyPath: sceneToLoad.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 6deb687b9f32d144fbe8259894702310,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0c98110a01d57498446f3e87b82b71, type: 3}
 --- !u!4 &963163583 stripped
@@ -2843,7 +2859,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78816
+  m_Name: pb_Mesh83178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7216,7 +7232,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78518
+  m_Name: pb_Mesh82880
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

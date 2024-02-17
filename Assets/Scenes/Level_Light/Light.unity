@@ -364,6 +364,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
+        type: 3}
+      propertyPath: sceneToLoad.sceneName
+      value: DummyScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
+        type: 3}
+      propertyPath: sceneToLoad.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: a291d0642b5b56c40af17cad5eada27e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0c98110a01d57498446f3e87b82b71, type: 3}
 --- !u!4 &1139124640 stripped
