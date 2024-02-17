@@ -19,6 +19,7 @@ namespace Portals
         LevelMain,
         LevelHeight,
         LevelMirror,
+        LevelImpatient,
         LevelLight
     }
 }
