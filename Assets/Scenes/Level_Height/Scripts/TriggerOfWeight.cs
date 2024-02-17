@@ -25,12 +25,20 @@ public class TriggerOfWeight : MonoBehaviour
         {
             targetWeight += 20;
         }
+        if (other.CompareTag("Player"))
+        {
+            targetWeight += 25;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("ItemWithWeight"))
         {
             targetWeight -= 20;
+        }
+        if (other.CompareTag("Player"))
+        {
+            targetWeight -= 25;
         }
     }
 }
