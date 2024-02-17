@@ -21,7 +21,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: purple
-  m_Shader: {fileID: -6465566751694194690, guid: 82b9a054477b37b43a1f709bac0a7916, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 82b9a054477b37b43a1f709bac0a7916,
+    type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -34,7 +35,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _SampleTexture2D_67695d1c3f3d437f8e1916fca39fcf45_Texture_1:
-        m_Texture: {fileID: 2800000, guid: eccba6728401e8040b340a55297d69ed, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
