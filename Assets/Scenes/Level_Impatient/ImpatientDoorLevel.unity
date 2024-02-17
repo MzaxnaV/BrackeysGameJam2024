@@ -240,7 +240,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76702
+  m_Name: pb_Mesh41794
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -828,7 +828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437255420}
   m_LocalRotation: {x: 1.110223e-17, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.9, y: 10.799805, z: -37.8}
+  m_LocalPosition: {x: -8.9, y: 10.799805, z: -38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1008,12 +1008,12 @@ PrefabInstance:
     - target: {fileID: 2213952377927750485, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.64
+      value: 24.00035
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750485, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.19
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750485, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
@@ -1063,13 +1063,13 @@ PrefabInstance:
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneName
-      value: Light
+      value: ImpatientDoorLevel
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 52d17e851f958814fa3070ca60409077,
+      objectReference: {fileID: 102900000, guid: 6deb687b9f32d144fbe8259894702310,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0c98110a01d57498446f3e87b82b71, type: 3}
@@ -1249,7 +1249,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76746
+  m_Name: pb_Mesh41838
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

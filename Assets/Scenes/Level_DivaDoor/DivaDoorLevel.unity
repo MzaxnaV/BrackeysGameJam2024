@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.050445646, g: 0.050445646, b: 0.050445646, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 4d51e42376c310f4998fde74101d6154,
+  m_LightingDataAsset: {fileID: 112000000, guid: 20c140eeffb05474e9313f841de09474,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 2ed0fde8b3dec4d42afd89ea503f6e64,
     type: 2}
@@ -366,14 +366,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
+      propertyPath: portalExit
+      value: 
+      objectReference: {fileID: 2020847391}
+    - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
+        type: 3}
       propertyPath: sceneToLoad.sceneName
-      value: DummyScene
+      value: ImpatientDoorLevel
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: a291d0642b5b56c40af17cad5eada27e,
+      objectReference: {fileID: 102900000, guid: 6deb687b9f32d144fbe8259894702310,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0c98110a01d57498446f3e87b82b71, type: 3}
@@ -406,7 +411,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232772338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -1000, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -417,7 +422,7 @@ Transform:
   - {fileID: 1930228507}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1930228506
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -216,7 +216,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78126
+  m_Name: pb_Mesh36708
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -970,13 +970,13 @@ PrefabInstance:
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneName
-      value: Height
+      value: ShyDoorLevel
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 235599b99ac32db48a24d1096b8df42a,
+      objectReference: {fileID: 102900000, guid: fb44d08a6638b5c4b91a11aab353ffe5,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0c98110a01d57498446f3e87b82b71, type: 3}
@@ -1091,6 +1091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870807802702521798, guid: 24dd1937ca24b8d42a963a6a5b0c0579,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870807802702521816, guid: 24dd1937ca24b8d42a963a6a5b0c0579,
         type: 3}

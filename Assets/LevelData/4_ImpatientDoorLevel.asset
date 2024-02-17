@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7acb98034cc4928937bac745501e1a1, type: 3}
-  m_Name: Portal_Height
+  m_Name: 4_ImpatientDoorLevel
   m_EditorClassIdentifier: 
-  source: 3
-  destination: 5
+  source: 5
+  destination: 6
   tint: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}

@@ -10,11 +10,11 @@ public class RaycastManager : MonoBehaviour
         // Infinity Raycast
         if (Physics.Raycast(transform.position, forward, out hit, Mathf.Infinity)) {
             if (hit.collider.CompareTag("Door")) {
-                Debug.Log("Shy door closed!");
+                // Debug.Log("Shy door closed!");
             }
             else
             {
-                Debug.Log("Shy door opens!");
+                // Debug.Log("Shy door opens!");
             }
         }
     }

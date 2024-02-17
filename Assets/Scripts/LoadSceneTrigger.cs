@@ -20,8 +20,6 @@ public class LoadSceneTrigger : MonoBehaviour
     {
         if (sceneToLoad != null && loadOnce && other.CompareTag("Player") )
         {
-            // check if scene to be loaded isn't this
-            Debug.Log("Loading scene: " + sceneToLoad);
             loadOnce = false;
             TransitionSceneManager.Instance.portalFrom = portalExit;
             SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);

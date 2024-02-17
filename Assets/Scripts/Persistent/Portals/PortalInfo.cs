@@ -18,10 +18,11 @@ namespace Portals
     {
         None,
         Entry,
-        LevelMain,
-        LevelHeight,
-        LevelMirror,
-        LevelImpatient,
-        LevelLight
+        MainMenuDoor,
+        ShyDoor,
+        DivaDoor,
+        ImpatientDoor,
+        HeightDoor,
+        EndDoor
     }
 }
