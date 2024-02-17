@@ -8,7 +8,7 @@ namespace Utils
     {
         void OnSceneGUI()
         {
-            LoadSceneTrigger trigger = (LoadSceneTrigger)target;
+            var trigger = (LoadSceneTrigger)target;
 
             if (trigger.portalExit != null)
             {
