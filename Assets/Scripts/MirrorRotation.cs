@@ -16,8 +16,6 @@ public class MirrorRotation : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Inside trigger");
-
         if (Input.GetKey(KeyCode.E))
         {
             RotateMirror();
