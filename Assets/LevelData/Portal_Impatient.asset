@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: 5
   destination: 6
+  tint: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
