@@ -4,12 +4,11 @@ using UnityEngine;
 public class MirrorRotation : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 75f;
-    private BoxCollider collider;
 
     private void Awake()
     {
-        collider = GetComponent<BoxCollider>();
-        if (!collider.isTrigger)
+        var boxCollider = GetComponent<BoxCollider>();
+        if (!boxCollider.isTrigger)
         {
             Debug.LogError("Set " + gameObject.name + "'s collider to Trigger!");
         }
