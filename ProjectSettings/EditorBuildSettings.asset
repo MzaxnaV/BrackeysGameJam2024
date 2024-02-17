@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_Height/Height.unity
     guid: 235599b99ac32db48a24d1096b8df42a
   - enabled: 1
-    path: Assets/Scenes/Test/Test.unity
-    guid: 71fcb0d224c05cf43bbe8e7943be936a
+    path: Assets/Scenes/Level_Mirror/Mirror.unity
+    guid: fb44d08a6638b5c4b91a11aab353ffe5
   - enabled: 1
-    path: Assets/Scenes/MyRoom/MyRoomOne.unity
-    guid: a2c3a46690e6dea489fddfde1ae295fb
+    path: Assets/Scenes/Level_Impatient/Impatient.unity
+    guid: 6deb687b9f32d144fbe8259894702310
+  - enabled: 1
+    path: Assets/Scenes/Level_Light/Light.unity
+    guid: 52d17e851f958814fa3070ca60409077
   m_configObjects: {}
