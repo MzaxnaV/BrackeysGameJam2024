@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 4829380955085699784, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
       propertyPath: destroySelf
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4829380955085699785, guid: a255071870fc14e4b8e162702a218436,
         type: 3}
