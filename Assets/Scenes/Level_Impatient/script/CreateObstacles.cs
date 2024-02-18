@@ -6,9 +6,7 @@ public class CreateObstacles : MonoBehaviour
 {
     public GameObject obstaclePrefab;
     public Transform instantiatePoint;
-    public float speed = 5f;
-    public float minX = -5.0f; 
-    public float maxX = 5.0f;  
+    public float randomPosX;  
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +16,13 @@ public class CreateObstacles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
-        if (transform.position.x <= minX || transform.position.x >= maxX)
-        {
-            speed *= -1;
-        }
+        
     }
 
     void CreatePrefab()
     {
-        Instantiate(obstaclePrefab, instantiatePoint.position, instantiatePoint.rotation);
+        randomPosX = Random.Range(instantiatePoint.position.x - 10, instantiatePoint.position.x + 10);
+        Instantiate(obstaclePrefab, new Vector3(randomPosX,instantiatePoint.position.y,instantiatePoint.position.z), instantiatePoint.rotation);
+        Debug.Log(new Vector3(randomPosX, instantiatePoint.position.y, instantiatePoint.position.z));
     }
 }
