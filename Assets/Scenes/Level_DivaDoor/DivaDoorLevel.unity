@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.050811794, g: 0.050811794, b: 0.050811794, a: 1}
+  m_IndirectSpecularColor: {r: 0.254638, g: 0.8881821, b: 0.6752948, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1084,13 +1084,13 @@ PrefabInstance:
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneName
-      value: ImpatientDoorLevel
+      value: Height
       objectReference: {fileID: 0}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
       propertyPath: sceneToLoad.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 6deb687b9f32d144fbe8259894702310,
+      objectReference: {fileID: 102900000, guid: 325892758a36f7c4aa8a9866fdec0b7a,
         type: 3}
     - target: {fileID: 2213952377927750489, guid: bd0c98110a01d57498446f3e87b82b71,
         type: 3}
