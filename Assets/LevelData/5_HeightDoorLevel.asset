@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: 6
   destination: 7
-  tint: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
+  tint: {r: 1, g: 1, b: 1, a: 1}
   clip: {fileID: 0}

@@ -1935,6 +1935,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: shydoor
       objectReference: {fileID: 0}
+    - target: {fileID: 4362780344473161931, guid: 7e15b8e9c000c984bbe9bd43333747a3,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d1d9250a8e34ad9409be9a2b4fa83c1b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e15b8e9c000c984bbe9bd43333747a3, type: 3}
 --- !u!4 &2875424188427580636 stripped
