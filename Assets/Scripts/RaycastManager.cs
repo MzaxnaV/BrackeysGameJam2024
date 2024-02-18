@@ -6,6 +6,14 @@ public class RaycastManager : MonoBehaviour
     private int layerMask;
     private bool toggle = true;
 
+    [Header("Pickup")] 
+    [SerializeField] private GameObject pickUp;
+    [SerializeField] private Transform holder;
+    [SerializeField] private LayerMask pickUpLayer;
+    [SerializeField] private float range = 3f;
+
+    private bool isPickedUp;
+
     private void Awake()
     {
         layerMask = 1 << LayerMask.NameToLayer("Door");
@@ -31,5 +39,35 @@ public class RaycastManager : MonoBehaviour
                 anim = null;
             }
         }
+        
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            if (!isPickedUp)
+            {
+                if (Physics.Raycast(transform.position, forward, out hit, range, pickUpLayer))
+                {
+                    if (hit.collider.CompareTag("ItemWithWeight"))
+                    {
+                        pickUp = hit.collider.gameObject;
+                        if (pickUp)
+                        {
+                            pickUp.transform.SetParent(holder);
+                            pickUp.GetComponent<Rigidbody>().isKinematic = true;
+                            isPickedUp = true; // Update flag
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (pickUp != null)
+                {
+                    pickUp.transform.SetParent(null);
+                    pickUp.GetComponent<Rigidbody>().isKinematic = false;
+                    isPickedUp = false;
+                    pickUp = null; 
+                }
+            }
+        }
     }
-}   
+}
