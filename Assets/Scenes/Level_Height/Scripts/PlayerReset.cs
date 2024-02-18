@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerReset : MonoBehaviour
 {
@@ -9,13 +10,14 @@ public class PlayerReset : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             var player = other.gameObject;
-            var controller = player.GetComponent<CharacterController>();
+            var controller = player.GetComponent<FirstPersonController>();
             if (controller != null)
             {
                 controller.enabled = false;
 
-                transform.SetPositionAndRotation(resetTransform.position, resetTransform.rotation);
-
+                Debug.Log("Disabled");
+                other.transform.SetPositionAndRotation(resetTransform.position, resetTransform.rotation);
+                
                 controller.enabled = true;
             }
             else
