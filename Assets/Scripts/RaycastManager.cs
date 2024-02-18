@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class RaycastManager : MonoBehaviour
 {
-    private MeshRenderer meshRenderer;
-    private static readonly int DoorlsShy = Animator.StringToHash("doorlsShy");
-
+    private Animation anim;
     private int layerMask;
+    private bool toggle = true;
 
     private void Awake()
     {
@@ -18,17 +17,18 @@ public class RaycastManager : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward).normalized;
         
         if (Physics.Raycast(transform.position, forward, out hit, Mathf.Infinity, layerMask)) {
-            meshRenderer = hit.collider.gameObject.transform.parent.GetComponent<MeshRenderer>();
-            if (meshRenderer != null) 
+            anim = hit.collider.gameObject.transform.parent.GetComponent<Animation>();
+            if (anim != null && toggle) 
             {
-                meshRenderer.enabled = true;
+                anim.Play();
+                toggle = false;
                 Mirrors.Instance.UpdatePlayerCondition(true);
             }
         } else {
-            if (meshRenderer != null) {
-                meshRenderer.enabled = false;
+            if (anim != null && !toggle) {
+                toggle = true;
                 Mirrors.Instance.UpdatePlayerCondition(false);
-                meshRenderer = null;
+                anim = null;
             }
         }
     }
