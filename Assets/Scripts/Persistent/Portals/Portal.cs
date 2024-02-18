@@ -254,7 +254,7 @@ namespace Portals
             
                     audioSource.clip = info.clip;
 
-                    audioSource.volume = 1.0f;
+                    audioSource.volume = 0.7f;
                     audioSource.loop = false;
 
                     audioSource.Play();
