@@ -8,6 +8,7 @@ public class SkyboxChanger : MonoBehaviourSingleton<SkyboxChanger>
 
     public void ChangeColour(Color colour)
     {
+        // TODO
         Debug.Log("Changing Skybox Colour");
         skybox.SetColor(TintColor, colour);
         DynamicGI.UpdateEnvironment();

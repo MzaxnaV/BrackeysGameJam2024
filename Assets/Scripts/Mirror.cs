@@ -33,8 +33,7 @@ public class Mirror : MonoBehaviour
             {
                 senseDoor = true;
             }
-        } else
-        {
+        } else {
             senseDoor = false;
         }
 
