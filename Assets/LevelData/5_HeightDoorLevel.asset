@@ -15,4 +15,4 @@ MonoBehaviour:
   source: 6
   destination: 7
   tint: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 5095c99ebf5e88f4fbe8a5dfeac24548, type: 3}
