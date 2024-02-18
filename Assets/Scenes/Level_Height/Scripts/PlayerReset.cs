@@ -7,7 +7,7 @@ public class PlayerReset : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-        { 
+        {
             var player = other.gameObject;
             var controller = player.GetComponent<CharacterController>();
             if (controller != null)
