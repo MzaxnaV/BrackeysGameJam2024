@@ -258,6 +258,8 @@ namespace Portals
                     audioSource.loop = false;
 
                     audioSource.Play();
+                    
+                    SkyboxChanger.Instance.ChangeColour(info.tint);
                 }
                 
                 this.OnTeleportTraveller.Invoke(this, this.Destination, traveller);
