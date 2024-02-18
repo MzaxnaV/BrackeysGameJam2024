@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1031974166243794256}
-  m_IndirectSpecularColor: {r: 0.050445646, g: 0.050445646, b: 0.050445646, a: 1}
+  m_IndirectSpecularColor: {r: 0.050811794, g: 0.050811794, b: 0.050811794, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -575,6 +575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FPSController
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452360049207090799, guid: 6687bc2a150e9144da2adfc4ca19a679,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6687bc2a150e9144da2adfc4ca19a679, type: 3}
