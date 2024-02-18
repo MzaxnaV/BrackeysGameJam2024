@@ -7,6 +7,7 @@ TagManager:
   - ItemWithWeight
   - Mirror
   - Door
+  - Blocker
   layers:
   - Default
   - TransparentFX
