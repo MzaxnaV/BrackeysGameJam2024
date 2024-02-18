@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 3_DivaDoorLevel
   m_EditorClassIdentifier: 
   source: 4
-  destination: 5
-  tint: {r: 0.5647059, g: 0.69411767, b: 0.44705883, a: 1}
-  clip: {fileID: 8300000, guid: 9c54843393ee2c344a90be28da91afd9, type: 3}
+  destination: 6
+  tint: {r: 0.54509807, g: 0.9529412, b: 0.84313726, a: 1}
+  clip: {fileID: 8300000, guid: 21e12a35d46483d4382c8c9bef9eabeb, type: 3}
