@@ -7,22 +7,28 @@ public class DoorOpen : MonoBehaviour
     private float initialX;
     private float targetX;
     float movingX;
+    public TriggerOfWeight weightScript;
+    public GameObject weightTrigger;
     // Start is called before the first frame update
     void Start()
     {
-        initialX = transform.position.x;
-        targetX = initialX;
+        weightScript = weightTrigger.GetComponent<TriggerOfWeight>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movingX = Mathf.Lerp(initialX, targetX, 1f * Time.deltaTime);
-        transform.position = new Vector3(movingX, transform.position.y, transform.position.z);
+        
+        if (weightScript.currentWeight > 84)
+        {
+            OpenTheDoor();
+        }
+        
     }
 
     void OpenTheDoor()
     {
-        targetX = -1;
+        Debug.Log("open");
+        Destroy(gameObject);
     }
 }
